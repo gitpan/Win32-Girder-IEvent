@@ -1,6 +1,9 @@
 Revision history for Perl extension Win32::Girder::IEvent.
 
-0.01  Tue Jun 18 12:52:04 2002
-	- original version; created by h2xs 1.5 with options
-		-X Win32::Girder::IEvent
+0.02 2002/06/20 Changed Versioning to get get version from Makefile.PL
+		Several documentation corrections
+		Made sure the server.pl example has taint checking on
 
+0.01 2002/06/19 Original version; created by h2xs 1.5 
+		Requested CPAN address space
+		Uploaded to CPAN for first time

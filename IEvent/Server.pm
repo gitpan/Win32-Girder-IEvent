@@ -52,13 +52,13 @@ Create a new server object. The server object inherits the IO::Socket::INET
 object and so the constructor can take all the IO::Socket::INET methods.
 However the only relavent ones are:
 
-* C<LocalPort>
+B<( LocalPort =E<gt> $port )>
 
 The port on which to run the server. Defaults to 1024 if not specified.
 
 Girder specific parameters are:
 
-* C<PassWord>
+B<( PassWord =E<gt> $mypass )>
 
 The password needed for access to the server. Defaults to 'NewDefPWD'. Note 
 that passwords are NOT sent plain text accross the wire.
@@ -316,7 +316,7 @@ The Girder home page http://www.girder.nl
 
 L<Win32::Girder::IEvent::Client>.
 
-L<IO::Socket>.
+L<IO::Socket::INET>.
 
 =cut
 

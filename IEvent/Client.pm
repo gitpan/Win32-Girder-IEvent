@@ -10,7 +10,7 @@ Win32::Girder::IEvent::Client - Perl API to the Win32 Girder Internet Events Cli
 
 	use Win32::Girder::IEvent::Client;
 	my $gc = Win32::Girder::IEvent::Client->new(
-		hostname => 'htpc.my.domain'
+		PeerHost => 'htpc.my.domain:1024'
 	);
 	$gc->send(42) || die "Can't send event';
 
@@ -48,25 +48,25 @@ our $VERSION = 0.01;
 
 #==============================================================================#
 
-=item Win32::Girder::IEvent::Client->new([ARGS]);
+=item my $gc = Win32::Girder::IEvent::Client->new([ARGS]);
 
 Create a new client object. The client object inherits the IO::Socket::INET 
 object and so the constructor can take all the IO::Socket::INET methods.
 However the only relavent ones are:
 
-* C<PeerAddr> or C<PeerHost>
+B<( PeerAddr =E<gt> $addr )> or B<( PeerHost =E<gt> $addr )>
 
 The servername (and possibly port) of the server to connect to. Defaults to 
 "localhost:1024" if not specified.
 
-* C<PeerPort>
+B<( PeerPort =E<gt> $port )>
 
 The port on which the server is running. Defaults to 1024 if not specified
 or not part of the server name.
 
 Girder specific parameters are:
 
-* C<PassWord>
+B<( PassWord =E<gt> $mypass )>
 
 The password needed for access to the server. Defaults to 'NewDefPWD'. Note 
 that passwords are NOT sent plain text accross the wire.
@@ -125,7 +125,8 @@ sub new {
 
 =item $gc->send("event1" [,"event2" ...]);
 
-Send an event, or several events to the server.
+Send an event, or several events to the server. Returns the number of events
+sent.
 
 =cut
 
@@ -184,7 +185,7 @@ The Girder home page http://www.girder.nl
 
 L<Win32::Girder::IEvent::Server>.
 
-L<IO::Socket>.
+L<IO::Socket::INET>.
 
 =cut
 

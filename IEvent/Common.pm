@@ -105,6 +105,8 @@ L<Win32::Girder::IEvent::Client>
 
 L<Win32::Girder::IEvent::Server>
 
+L<Digest::MD5>
+
 =cut
 
 #
