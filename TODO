@@ -1,0 +1,11 @@
+Things to do, or just a wish list?
+
+Server:
+ * Allow client access in many formats:
+	Hostname IP IP/netmask Pattern
+ * Allow logging to a file handle
+ * TK API
+ * Event API
+
+Client:
+ * Nonblocking version

@@ -1,0 +1,6 @@
+Revision history for Perl extension Win32::Girder::IEvent.
+
+0.01  Tue Jun 18 12:52:04 2002
+	- original version; created by h2xs 1.5 with options
+		-X Win32::Girder::IEvent
+
