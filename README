@@ -24,6 +24,10 @@ To install this module type the following:
    make test
    make install
 
+If you are using Activestate perl, you can also install as a PPM:
+
+   ppm install --location=http://brock-family.org/gavin/perl/ppm Win32-Girder-IEvent
+
 #==============================================================================#
 
 DEPENDENCIES

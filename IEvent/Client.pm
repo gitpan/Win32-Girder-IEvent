@@ -12,7 +12,7 @@ Win32::Girder::IEvent::Client - Perl API to the Win32 Girder Internet Events Cli
 	my $gc = Win32::Girder::IEvent::Client->new(
 		PeerHost => 'htpc.my.domain:1024'
 	);
-	$gc->send(42) || die "Can't send event';
+	$gc->send(42) || die "Can't send event";
 
 =head1 DESCRIPTION
 
