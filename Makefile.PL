@@ -5,7 +5,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     'NAME'		=> 'Win32::Girder::IEvent',
-    'VERSION'		=> 0.03,
+    'VERSION'		=> 0.04,
     'PREREQ_PM'		=> {
 	'Digest::MD5'       => 2.00,
 	'IO::Socket::INET'  => 1.25,
